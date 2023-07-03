@@ -250,6 +250,7 @@
         $("#new-company").keyup(function() {
             $('.company').text(document.getElementById('new-company').value);
             $('#message').attr('placeholder', ' '+document.getElementById('new-company').value+' is of strong interest to me because');
+            $("title").text("stevensimon-"+document.getElementById('new-company').value.toLowerCase());
         });
 
     });//on load
